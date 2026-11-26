@@ -1,0 +1,21 @@
+#SECTION,META
+parameter,value
+instance_id,ec2_budget_extremely_tight
+description,Two tasks with fully satisfiable capability and time windows; total budget deliberately reduced to 20 so that any valid assignment exceeds the budget threshold
+m,2
+n,4
+B,20
+#SECTION,TASKS
+task_id,p_i,e_i_req,wt_s,wt_e,t_ij_base
+0,90,0.2,6,17,2
+1,85,0.2,7,18,3
+#SECTION,FARMERS
+farmer_id,e_j,r_j,c_j_labor,c_j_trav,c_j_rem,wf_s,wf_e
+0,0.6,0.5,9,2,13,5,19
+1,0.7,0.4,10,3,14,6,20
+2,0.8,0.6,8,1,12,5,18
+3,0.9,0.3,9,2,13,7,20
+#SECTION,DISTANCES_KM
+task_id,f0,f1,f2,f3
+0,5,12,9,20
+1,8,6,15,14

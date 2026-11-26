@@ -1,0 +1,17 @@
+#SECTION,META
+parameter,value
+instance_id,ec4_time_window_conflict
+description,Sensing capability is satisfied by both farmers, but their available working windows (12-18 and 13-20) do not overlap the task window (6-9); no legal start time exists
+m,1
+n,2
+B,500
+#SECTION,TASKS
+task_id,p_i,e_i_req,wt_s,wt_e,t_ij_base
+0,80,0.2,6,9,2
+#SECTION,FARMERS
+farmer_id,e_j,r_j,c_j_labor,c_j_trav,c_j_rem,wf_s,wf_e
+0,0.7,0.5,9,2,13,12,18
+1,0.8,0.4,10,1,14,13,20
+#SECTION,DISTANCES_KM
+task_id,f0,f1
+0,6,11

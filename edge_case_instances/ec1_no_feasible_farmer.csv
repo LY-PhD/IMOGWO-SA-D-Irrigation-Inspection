@@ -1,0 +1,18 @@
+#SECTION,META
+parameter,value
+instance_id,ec1_no_feasible_farmer
+description,Single task requiring sensing capability 0.9; no candidate farmer reaches this threshold
+m,1
+n,3
+B,500
+#SECTION,TASKS
+task_id,p_i,e_i_req,wt_s,wt_e,t_ij_base
+0,80,0.9,6,14,2
+#SECTION,FARMERS
+farmer_id,e_j,r_j,c_j_labor,c_j_trav,c_j_rem,wf_s,wf_e
+0,0.3,0.6,9,3,13,5,18
+1,0.4,0.5,10,2,14,6,19
+2,0.5,0.7,8,4,15,5,20
+#SECTION,DISTANCES_KM
+task_id,f0,f1,f2
+0,12,7,18

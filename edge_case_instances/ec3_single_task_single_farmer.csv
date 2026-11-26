@@ -1,0 +1,16 @@
+#SECTION,META
+parameter,value
+instance_id,ec3_single_task_single_farmer
+description,Minimal instance with one task and one qualified farmer; all four constraint categories are satisfied and exactly one feasible assignment exists
+m,1
+n,1
+B,500
+#SECTION,TASKS
+task_id,p_i,e_i_req,wt_s,wt_e,t_ij_base
+0,70,0.2,6,14,2
+#SECTION,FARMERS
+farmer_id,e_j,r_j,c_j_labor,c_j_trav,c_j_rem,wf_s,wf_e
+0,0.6,0.5,9,2,13,5,18
+#SECTION,DISTANCES_KM
+task_id,f0
+0,4
